@@ -7,7 +7,7 @@ on:
 
 env:
   ACR_NAME: libraryacr
-  ACR_REPO: net9weatherforecast
+  ACR_REPO: netwithredis
   ACR_URL: libraryacr.azurecr.io
   WEBAPP_NAME: sidecar-vp
   SLOT_NAME: redisnet9
