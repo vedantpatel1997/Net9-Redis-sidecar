@@ -72,7 +72,7 @@ jobs:
             [
               {
                 "name": "net9weatherforecast",
-                "image": "libraryacr.azurecr.io/net9weatherforecast:${{ env.IMAGETAG }}",
+                "image": "${{ env.ACR_URL }}/${{ env.ACR_REPO }}:${{ env.IMAGETAG }}",
                 "targetPort": 8080,
                 "isMain": true,
                 "authType": "UserAssigned",
@@ -80,7 +80,7 @@ jobs:
               },
               {
                 "name": "redis7.2",
-                "image": "libraryacr.azurecr.io/net9weatherforecast:redis7.2",
+                "image": "${{ env.ACR_URL }}/${{ env.ACR_REPO }}:redis7.2",
                 "targetPort": 6379,
                 "isMain": false,
                 "authType": "UserAssigned",
